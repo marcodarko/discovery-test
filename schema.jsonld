@@ -2,7 +2,24 @@
   "@context": {
     "schema": "http://schema.org/",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "fds": "http://discovery.biothings.io/"
   },
-  "@graph": []
+  "@graph": [
+    {
+      "@id": "fds:UpdateClass",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "fdakshfkjdsahkj fhjsadh",
+      "rdfs:label": "UpdateClass",
+      "rdfs:subClassOf": {
+        "@id": "schema:Dataset"
+      },
+      "$validation": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    }
+  ]
 }
