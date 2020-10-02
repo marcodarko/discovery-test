@@ -3,14 +3,14 @@
     "schema": "http://schema.org/",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "marco": "http://discovery.biothings.io/"
+    "new": "http://discovery.biothings.io/"
   },
   "@graph": [
     {
-      "@id": "marco:MyNewClass",
+      "@id": "new:NewClass",
       "@type": "rdfs:Class",
-      "rdfs:comment": "something about this class",
-      "rdfs:label": "MyNewClass",
+      "rdfs:comment": "fhdkhf kjsakfdjsh fkjdskjfhkj adhsfkj",
+      "rdfs:label": "NewClass",
       "rdfs:subClassOf": {
         "@id": "schema:Dataset"
       },
@@ -19,38 +19,20 @@
         "type": "object",
         "properties": {
           "newProp": {
-            "description": "testing facility",
-            "type": "string"
-          },
-          "about": {
-            "description": "The subject matter of the content.",
-            "type": "string"
-          },
-          "accessModeSufficient": {
-            "description": "A list of single or combined accessModes that are sufficient to understand all the intellectual content of a resource. Expected values include:  auditory, tactile, textual, visual.",
-            "type": "string"
-          },
-          "accessibilityHazard": {
-            "description": "A characteristic of the described resource that is physiologically dangerous to some users. Related to WCAG 2.0 guideline 2.3 (<a href=\"http://www.w3.org/wiki/WebSchemas/Accessibility\">WebSchemas wiki lists possible values</a>).",
-            "type": "string"
-          },
-          "accessibilityControl": {
-            "description": "Identifies input methods that are sufficient to fully control the described resource (<a href=\"http://www.w3.org/wiki/WebSchemas/Accessibility\">WebSchemas wiki lists possible values</a>).",
+            "description": "fsahdkfas fhlsdahlfkhsdl afhhs",
             "type": "string"
           }
         },
-        "required": [
-          "accessibilityControl"
-        ]
+        "required": []
       }
     },
     {
-      "@id": "marco:newProp",
+      "@id": "new:newProp",
       "@type": "rdfs:Property",
-      "rdfs:comment": "testing facility",
+      "rdfs:comment": "fsahdkfas fhlsdahlfkhsdl afhhs",
       "rdfs:label": "newProp",
       "schema:domainIncludes": {
-        "@id": "marco:MyNewClass"
+        "@id": "new:NewClass"
       },
       "schema:rangeIncludes": [
         {
