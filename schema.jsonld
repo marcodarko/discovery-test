@@ -3,42 +3,7 @@
     "schema": "http://schema.org/",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "new": "http://discovery.biothings.io/"
+    "gfd": "http://discovery.biothings.io/view/"
   },
-  "@graph": [
-    {
-      "@id": "new:NewClass",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "fhdkhf kjsakfdjsh fkjdskjfhkj adhsfkj",
-      "rdfs:label": "NewClass",
-      "rdfs:subClassOf": {
-        "@id": "schema:Dataset"
-      },
-      "$validation": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "type": "object",
-        "properties": {
-          "newProp": {
-            "description": "fsahdkfas fhlsdahlfkhsdl afhhs",
-            "type": "string"
-          }
-        },
-        "required": []
-      }
-    },
-    {
-      "@id": "new:newProp",
-      "@type": "rdfs:Property",
-      "rdfs:comment": "fsahdkfas fhlsdahlfkhsdl afhhs",
-      "rdfs:label": "newProp",
-      "schema:domainIncludes": {
-        "@id": "new:NewClass"
-      },
-      "schema:rangeIncludes": [
-        {
-          "@id": "schema:CovidTestingFacility"
-        }
-      ]
-    }
-  ]
+  "@graph": []
 }
