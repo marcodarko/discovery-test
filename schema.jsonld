@@ -3,13 +3,13 @@
     "schema": "http://schema.org/",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "test": "http://discovery.biothings.io/view/"
+    "jerry": "http://discovery.biothings.io/view/"
   },
   "@graph": [
     {
-      "@id": "test:MyClass",
+      "@id": "jerry:MyClass",
       "@type": "rdfs:Class",
-      "rdfs:comment": "test to make sure everything works",
+      "rdfs:comment": "fsdakhfkjahsdkjfhkasdf",
       "rdfs:label": "MyClass",
       "rdfs:subClassOf": {
         "@id": "schema:Dataset"
@@ -17,55 +17,9 @@
       "$validation": {
         "$schema": "http://json-schema.org/draft-07/schema#",
         "type": "object",
-        "properties": {
-          "myProp": {
-            "description": "fakflkds fkjdsfjsaldhfldsfhl sdh",
-            "type": "string"
-          },
-          "variableMeasured": {
-            "description": "The variableMeasured property can indicate (repeated as necessary) the  variables that are measured in some dataset, either described as text or as pairs of identifier and description using PropertyValue.",
-            "type": "string"
-          },
-          "includedInDataCatalog": {
-            "description": "A data catalog which contains this dataset.",
-            "type": "object",
-            "properties": {
-              "name": {
-                "const": "CTSA Datasets"
-              },
-              "url": {
-                "const": "https://ctsa.ncats.nih.gov/cd2h/"
-              }
-            }
-          },
-          "issn": {
-            "description": "The International Standard Serial Number (ISSN) that identifies this serial publication. You can repeat this property to identify different formats of, or the linking ISSN (ISSN-L) for, this serial publication.",
-            "type": "string"
-          },
-          "distribution": {
-            "description": "A downloadable form of this dataset, at a specific location, in a specific format.",
-            "type": "string"
-          }
-        },
-        "required": [
-          "variableMeasured",
-          "issn"
-        ]
+        "properties": {},
+        "required": []
       }
-    },
-    {
-      "@id": "test:myProp",
-      "@type": "rdfs:Property",
-      "rdfs:comment": "fakflkds fkjdsfjsaldhfldsfhl sdh",
-      "rdfs:label": "myProp",
-      "schema:domainIncludes": {
-        "@id": "test:MyClass"
-      },
-      "schema:rangeIncludes": [
-        {
-          "@id": "schema:CovidTestingFacility"
-        }
-      ]
     }
   ]
 }
